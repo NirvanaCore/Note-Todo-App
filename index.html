@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note-ToDo-App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="note-box">
+      <h1>What you want to Add</h1>
+      <header class="nav-box">
+        <button class="nav-item openTodo"> To-do List</button>
+        <button class="nav-item openNote"> Notes</button>
+      </header>
+
+      <div class="addData addTodos" id="addTodos">
+        <form class="add_todo" id="add_todo">
+          <input type="text" class="todo_input" placeholder="Add to-do item" required>
+          <button class="todo_button" id="addTodoList"><i class="fas fa-plus"></i></button>
+        </form>
+        <div class="select">
+          <select name="todos" id="todos" class="filter_todo">
+            <option value="all">Display All</option>
+            <option value="completed">Completed</option>
+            <option value="remaining">Remaining</option>
+          </select>
+        </div>
+        <div class="todo_container">
+          <ul class="todo_list"></ul>
+        </div>
+      </div>
+
+      <div class="addData addNotes" id="addNotes">
+        <form class="add_Note" id="add_Note">
+          <div class="note-form-group">
+            <input type="text" class="note_input" placeholder="Add title" >
+          </div>
+          <div class="note-form-group">
+            <textarea type="text" class="note_textarea" placeholder="Add text"></textarea>
+          </div>
+          <div class="note-form-group">
+          <button class="note_button" id="note_button"><i class="fas fa-plus"> Add Note</i></button>
+          </div>
+        </form>
+        <!-- <h3>Your Notes :</h3> -->
+        <div class="note_container" id="note_container">   
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.1.1/marked.min.js"></script>
+  </script>
+</body>
+
+</html>
