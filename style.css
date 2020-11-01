@@ -43,7 +43,7 @@ h1 {
 
 @media (max-width: 420px) {
   h1 {
-    padding-top: 2rem;
+    padding-top: 4rem;
     font-size: 1rem;
   }
 }
@@ -138,20 +138,24 @@ header,
 @media(max-width: 720px){
   .nav-item{
     font-size: 1.2rem;
-    padding: 5px;
+    padding: 10px 12px;
   }
 }
 
 @media(max-width: 420px) {
   .nav-item {
     font-size: 1rem;
-    padding: 2px;
+    padding: 7px 10px;
   }
   .addTodos {
       top: 11rem;
+      left: 5px;
+      right: 5px;
   }
   .addNotes {
       top: 11rem;
+      left: 5px;
+      right: 5px;
   }
 }
 
@@ -200,7 +204,7 @@ form button:hover {
 
 /* todo container */
 .add_todo input {
-  width: 60%;
+  width: 65%;
 
 }
 
@@ -352,6 +356,7 @@ select::after {
 /* Note Container */
 
 .add_Note{
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -385,16 +390,22 @@ select::after {
 
 @media (max-width: 420px) {
 
+  .add_Note {
+    left:10%;
+    right: 10%;
+  }
   .add_Note input,
   .add_Note button,
   .add_Note textarea {
+    left: 10px;
+    right: 10px;
     font-size: 12px;
   }
 }
 
 .add_Note input,
 .add_Note textarea{
-  width: 80%;
+  width: 75%;
 }
 
 .note_container {
@@ -424,6 +435,7 @@ select::after {
 
   .note_container {
     font-size: 1rem;
+    right: 20px;
     grid-template-columns: 250px;
   }
 }
@@ -506,7 +518,7 @@ select::after {
 
 @media (max-width: 720px) {
   .noteCard button {
-    font-size: 13px;
+    font-size: 12px;
     width: 40px;
     height: 40px;
   }
@@ -523,6 +535,7 @@ select::after {
   height: 20px;
 }
 .noteCard {
+
   font-size: 10px;
   height: 200px;
 }
