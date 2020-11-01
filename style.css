@@ -62,7 +62,6 @@ header {
   top: 5rem;
   left: 20%;
   right: 20%;
-  background-color: white;
   text-align: center;
   background: transparent;
 }
@@ -125,6 +124,8 @@ header,
 }
 
 .nav-item{
+  color: #160335;
+  background: rgb(255, 255, 255);
   margin: auto 1rem;
   border: 0;
   padding: 15px 25px;
@@ -415,7 +416,7 @@ select::after {
 .note_container {
     font-size: 1rem;
     top: 28%;
-    grid-template-columns: 250px;
+    grid-template-columns: 280px;
   }
 }
 
@@ -423,7 +424,7 @@ select::after {
 
   .note_container {
     font-size: 1rem;
-    grid-template-columns: 200px;
+    grid-template-columns: 250px;
   }
 }
 
